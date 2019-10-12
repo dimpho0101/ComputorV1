@@ -1,19 +1,38 @@
 package za.co.diputu.Model;
 
-import java.io.*;
 import java.util.*;
-import java.math.*;
 
 public class Main {
 
-    public void isHighestDegree(String[] x)
+    public void isHighestDegree(String x)
     {
         ArrayList<String> str = new ArrayList<String>();
 //        str.add(x);
-        x = new String[]{"5 * X^0 + 4 * X^1 = 4 * X^0"};
-        for()
-        {
+        String [] str1 = x.split("\\Q^\\E");
+//        String [] str2 = x.;
 
+        for (String a : str1)
+        {
+            System.out.println("A test " + a);
+            for (int i = 0; i < str1.length;i++)
+            {
+                System.out.println("Another test " + str1[i]);
+            }
+//            System.out.println("yo " + str1);
+        }
+        String [] r;
+        for (int i = 0; i < str1.length;i++)
+        {
+//            char ch = '^';
+//            int ascii = ch;
+//            int castAscii = (int) ch;
+//            System.out.println(castAscii);
+            System.out.println("yoo "  + str1[i]);
+            System.out.println("yoo aaaah "  + str1[1]);
+            if (str1[i] == str1[1])
+            {
+                System.out.println(str1[1] + "yoo");
+            }
         }
     }
 
@@ -52,7 +71,7 @@ public class Main {
 //        x.isPower(9,5);
 //        Scanner myObj = new Scanner(System.in);
 //        x.isCoefficient("12Bw");
-        x.isHighestDegree(new String[]{"5 * X^0 + 4 * X^1 = 4 * X^0"});
+        x.isHighestDegree("5 * X^0 + 4 * X^1 = 4 * X^0");
 
 
     }
