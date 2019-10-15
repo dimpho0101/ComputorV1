@@ -9,14 +9,22 @@ public class Main {
         ArrayList<String> str = new ArrayList<String>();
 
         ///////////////////////////////////////////
-              String equation = "5x^0 - 2 + 3y^1";
+              String equation = "5x^3 - 2 + 3y^1";
         String [] arr = equation.split("\\Q^\\E");
-        
+
+
         for (int c = 1;c < arr.length;c++){
             String test = arr[c].split(" ")[0];
             System.out.println(test);
             str.add(test);
 //            System.out.println("A test " +  str);
+        }
+
+        if (str != null || str.size() == 1)
+        {
+            Collections.sort(str);
+            System.out.println("Sorted list " + str);
+            System.out.println("The highest degree: " + str.get(str.size() - 1));
         }
         System.out.println("A test " +  str);
         ///////////////////////////////////////////
