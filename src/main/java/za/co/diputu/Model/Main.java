@@ -7,40 +7,20 @@ public class Main {
     public void isHighestDegree(String x)
     {
         ArrayList<String> str = new ArrayList<String>();
-//        str.add(x);
-        String [] str1 = x.split("\\Q^\\E");
-//        String [] str2 = x.;
+
         ///////////////////////////////////////////
               String equation = "5x^0 - 2 + 3y^1";
         String [] arr = equation.split("\\Q^\\E");
         
         for (int c = 1;c < arr.length;c++){
-            System.out.println(arr[c].split(" ")[0]);
+            String test = arr[c].split(" ")[0];
+            System.out.println(test);
+            str.add(test);
+//            System.out.println("A test " +  str);
         }
+        System.out.println("A test " +  str);
         ///////////////////////////////////////////
-        for (String a : str1)
-        {
-            System.out.println("A test " + a);
-            for (int i = 0; i < str1.length;i++)
-            {
-                System.out.println("Another test " + str1[i]);
-            }
-//            System.out.println("yo " + str1);
-        }
-        String [] r;
-        for (int i = 0; i < str1.length;i++)
-        {
-//            char ch = '^';
-//            int ascii = ch;
-//            int castAscii = (int) ch;
-//            System.out.println(castAscii);
-            System.out.println("yoo "  + str1[i]);
-            System.out.println("yoo aaaah "  + str1[1]);
-            if (str1[i] == str1[1])
-            {
-                System.out.println(str1[1] + "yoo");
-            }
-        }
+
     }
 
     public void isCoefficient(String equation)
