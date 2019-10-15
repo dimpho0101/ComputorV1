@@ -10,7 +10,14 @@ public class Main {
 //        str.add(x);
         String [] str1 = x.split("\\Q^\\E");
 //        String [] str2 = x.;
-
+        ///////////////////////////////////////////
+              String equation = "5x^0 - 2 + 3y^1";
+        String [] arr = equation.split("\\Q^\\E");
+        
+        for (int c = 1;c < arr.length;c++){
+            System.out.println(arr[c].split(" ")[0]);
+        }
+        ///////////////////////////////////////////
         for (String a : str1)
         {
             System.out.println("A test " + a);
