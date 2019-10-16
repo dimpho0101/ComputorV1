@@ -4,11 +4,12 @@ import java.util.*;
 
 public class Main {
 
+
+
     public void isHighestDegree(String x)
     {
         ArrayList<String> str = new ArrayList<String>();
 
-        ///////////////////////////////////////////
               String equation = "5x^3 - 2 + 3y^1";
         String [] arr = equation.split("\\Q^\\E");
 
@@ -24,10 +25,9 @@ public class Main {
         {
             Collections.sort(str);
             System.out.println("Sorted list " + str);
-            System.out.println("The highest degree: " + str.get(str.size() - 1));
+            System.out.println("The Polynomial Degree: " + str.get(str.size() - 1));
         }
         System.out.println("A test " +  str);
-        ///////////////////////////////////////////
 
     }
 
@@ -65,8 +65,8 @@ public class Main {
         Main x = new Main();
 //        x.isPower(9,5);
 //        Scanner myObj = new Scanner(System.in);
-//        x.isCoefficient("12Bw");
-        x.isHighestDegree("5 * X^0 + 4 * X^1 = 4 * X^0");
+        x.isCoefficient("12Bw");
+//        x.isHighestDegree("5 * X^0 + 4 * X^1 = 4 * X^0");
 
 
     }
