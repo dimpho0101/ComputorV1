@@ -14,6 +14,8 @@ public class simplify {
             String test = a[c];
             str.add(test);
         }
+
+        //you are trying to create like terms to simplify equation
         for (int i = 0;i < a.length; i++) {
             if (a[i].matches(".*[a-zA-Z].*"))
             {
