@@ -17,11 +17,22 @@ public class simplify {
 
         //you are trying to create like terms to simplify equation
         for (int i = 0;i < a.length; i++) {
-            if (a[i].matches(".*[a-zA-Z].*"))
-            {
+            if (a[i].matches(".*[a-zA-Z].*")) {
                 System.out.println("Fierce " + a[i]);
+                if (!a[i].matches(".*[a-zA-Z].*"))
+                {
+                    System.out.println("");
+                }
 //                System.out.println("List index " + str.get(i));
             }
+
+            for (String d : a)
+            {
+                d.split(".*[a-zA-Z].*");
+
+            }
+
+            boolean num;
         }
     }
     public static void main(String[] args) {
