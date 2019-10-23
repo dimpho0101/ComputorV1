@@ -65,8 +65,8 @@ public class Main {
         Main x = new Main();
 //        x.isPower(9,5);
 //        Scanner myObj = new Scanner(System.in);
-        x.isCoefficient("12Bw");
-//        x.isHighestDegree("5 * X^0 + 4 * X^1 = 4 * X^0");
+//        x.isCoefficient("12Bw");
+        x.isHighestDegree("5 * X^0 + 4 * X^1 = 4 * X^0");
 
 
     }

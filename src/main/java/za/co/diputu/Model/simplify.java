@@ -14,7 +14,6 @@ public class simplify {
             String test = a[c];
             str.add(test);
         }
-
         //you are trying to create like terms to simplify equation
         for (int i = 0;i < a.length; i++) {
             if (a[i].matches(".*[a-zA-Z].*")) {
@@ -25,11 +24,11 @@ public class simplify {
                 }
 //                System.out.println("List index " + str.get(i));
             }
-
-            for (String d : a)
+//            System.out.println("yoooo" + str);
+            for (int k = 0; k < str.size(); k++)
             {
-                d.split(".*[a-zA-Z].*");
-
+                String o = str.get(k);
+                System.out.println("yoo " + o);
             }
 
             boolean num;
