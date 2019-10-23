@@ -15,24 +15,23 @@ public class simplify {
             str.add(test);
         }
         //you are trying to create like terms to simplify equation
-        for (int i = 0;i < a.length; i++) {
-            if (a[i].matches(".*[a-zA-Z].*")) {
-                System.out.println("Fierce " + a[i]);
-                if (!a[i].matches(".*[a-zA-Z].*"))
-                {
-                    System.out.println("");
-                }
-//                System.out.println("List index " + str.get(i));
-            }
+//        for (int i = 0;i < a.length; i++) {
+//            if (a[i].matches(".*[a-zA-Z].*")) {
+//                System.out.println("Fierce " + a[i]);
+//                if ()
+//                {
+//                    System.out.println("");
+//                }
+////                System.out.println("List index " + str.get(i));
+//            }
 //            System.out.println("yoooo" + str);
-            for (int k = 0; k < str.size(); k++)
+        String [] storage = x.split(".*[a-zA-Z].*");
+        for (int k = 0; k < storage.length; k++)
             {
-                String o = str.get(k);
-                System.out.println("yoo " + o);
+                System.out.println("variables " + storage[k]);
             }
 
             boolean num;
-        }
     }
     public static void main(String[] args) {
         simplify x = new simplify();
