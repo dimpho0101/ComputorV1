@@ -24,13 +24,13 @@ public class simplify {
 //                }
 ////                System.out.println("List index " + str.get(i));
 //            }
-//            System.out.println("yoooo" + str);
+            System.out.println("yoooo" + str);
         String [] storage = x.split(".*[a-zA-Z].*");
-        for (int k = 0; k < storage.length; k++)
-            {
-                System.out.println("variables " + storage[k]);
+        for (int k = 0; k < str.size(); k++) {
+            if (str.get(k).contains("y")) {
+                System.out.println(str.get(k));
             }
-
+        }
             boolean num;
     }
     public static void main(String[] args) {
